@@ -7,5 +7,5 @@ interface Config {
   projectId: string;
 }
 
-const config: Config;
+declare const config: Config;
 export default config;
