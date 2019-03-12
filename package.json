@@ -1,7 +1,7 @@
 {
   "name": "firebase-setup-web",
   "version": "0.0.1",
-  "description": "Get a 'firebase setup:web' response json",
+  "description": "You get config by result of 'firebase setup:web'.",
   "main": "index.js",
   "scripts": {},
   "keywords": [
