@@ -1,6 +1,6 @@
 {
   "name": "firebase-setup-web",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "You get config by result of 'firebase setup:web'.",
   "main": "index.js",
   "scripts": {},
@@ -14,6 +14,10 @@
   ],
   "author": "taqm",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taqm/firebase-setup-web"
+  },
   "devDependencies": {
     "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^13.1.0",

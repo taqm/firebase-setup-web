@@ -1,6 +1,8 @@
+[![npm version](https://badge.fury.io/js/firebase-setup-web.svg)](https://badge.fury.io/js/firebase-setup-web)
+
 # firebase-setup-web
 
-## Install
+## Installation
 ```bash
 npm install --save-dev firebase-setup-web
 # or
