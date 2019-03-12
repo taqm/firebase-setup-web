@@ -4,6 +4,11 @@
   "description": "You get config by result of 'firebase setup:web'.",
   "main": "index.js",
   "scripts": {},
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "package.json"
+  ],
   "keywords": [
     "firebase"
   ],
