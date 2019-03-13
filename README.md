@@ -4,7 +4,7 @@
 
 ## Important
 In order to use this module,  
-you need to be able to execute "firebase setup:web" in the target project.
+you need to be able to execute "`firebase setup:web`" in the target project.
 
 ## Installation
 ```bash

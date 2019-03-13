@@ -11,4 +11,3 @@ const fnc = Buffer.from(res, 'utf-8').toString();
 const config = eval(fnc); // eslint-disable-line no-eval
 
 module.exports = config;
-module.default = config;
