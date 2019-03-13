@@ -29,6 +29,14 @@ module.exports = {
 };
 ```
 
+### Using token
+If you want to get config using token,  
+please set a token to environment valiable `FB_CI_TOKEN`.
+
+```bash
+export FB_CI_TOKEN="Set Here"
+```
+
 ## Interface
 
 ```typescript

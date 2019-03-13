@@ -1,6 +1,6 @@
 {
   "name": "firebase-setup-web",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "You get config by result of 'firebase setup:web'.",
   "main": "index.js",
   "scripts": {},
