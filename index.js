@@ -1,19 +1,19 @@
 const { execSync } = require('child_process');
 
-// eslint-disable-next-line
-const firebase = {
-  initializeApp: c => c,
-};
+function getConfig(appId) {
+    if (!appId) throw new Error('Please, set the Firebase appId.')
+    
+    let CMD = `firebase apps:sdkconfig web ${appId}`;
+    const res = execSync(CMD, {
+        encoding: "utf-8"
+    });
+    const result = /firebase\.initializeApp\(((?:.|\n)*)\)/g.exec(res)
 
-const TOKEN = process.env.FB_CI_TOKEN;
+    if (!result) throw new Error('Something got wrong while getting the Firebase config: ' + res)
 
-let CMD = 'firebase setup:web';
-if (TOKEN) {
-  CMD += ` --token ${TOKEN}`;
+    const str = result[1]
+    const config = JSON.parse(str);
+    return config
 }
 
-const res = execSync(CMD);
-const fnc = Buffer.from(res, 'utf-8').toString();
-const config = eval(fnc); // eslint-disable-line no-eval
-
-module.exports = config;
+module.exports = getConfig;
